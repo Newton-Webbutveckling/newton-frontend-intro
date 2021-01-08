@@ -1,0 +1,88 @@
+p {
+    font-family: "Fira Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Frank Ruhl Libre", serif;
+}
+
+.offer {
+    background-color: #f07949;
+    background-size: 500px;
+}
+
+    .offer p {
+        font-size: 5vw;
+        font-weight: 900; 
+        text-align: center;
+        color: #773c24;
+    }
+
+    .offer h1 {
+        font-size: 10vw;
+        text-align: center;
+        color: #ffffff;
+    }
+
+.join {
+    background-color: #f9b131;
+}
+
+    .join p {
+        font-size: 5vw;
+        font-weight: 900;
+        text-align: center;
+        color: #7c5818;
+    }
+
+    .join h1 {
+        font-size: 10vw;
+        text-align: center;
+        color: #ffffff;
+    }
+
+.safetynet {
+    background-color: #a8a19e;
+}
+
+.safetynet h1 {
+    font-size: 10vw;
+    color: #ffffff;
+}
+
+    .safetynet p {
+        font-size: 5vw;
+        color: #43403f;
+    }
+
+.card1 img {
+    width: 30%;
+}
+
+.card1 {
+    background-color: green;
+}
+
+.card2 img {
+    width: 30%;
+}
+
+.card3 img {
+    width: 30%;
+}
+
+@media (min-width: 600px){
+    .offer {
+        background-color: green;
+    }
+    
+    p {
+        font-weight: 900;
+    }
+
+    h1 {
+        font-family: "Times New Roman", serif;
+    }
+}
