@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    margin:0; 
+    padding:0; 
+}
+
+h1, h2{
+    
+font-family:'DM Serif Display', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: black;
+    margin:0;
+    padding:0;
+}
+
+/* COLUMN LAYOUT */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    
+}
+
+
+
+
+
+
+
+/* HEADER PART */
+header{
+    display:flex;
+    justify-content:space-evenly;
+    height:300px;
+    background-color:rgb(207, 235, 233);
+    margin:0;
+    padding:0;
+    width:100%;
+    height:350px;
+    overflow:hidden;
+    
+}
+
+div.item{
+    
+    width:auto;
+    display:flex;
+     
+    
+}
+
+.hello h1{
+    font-size: large;
+    margin:auto;
+    position:relative;
+    padding:0px; 
+    left:30px; 
+    top:20px;
+    width:100%; 
+    font-size: 40px;
+    height:200px; 
+    
+    text-align:left;
+    white-space: nowrap;
+}
+
+.manbaby{
+    margin:auto; 
+}
+.manbaby img{
+    width: 220px;
+    position: relative;
+    top:15px;
+    right:20px;
+}
+
+
+/* NAV PART */
+
+nav{
+    width:100%;
+    background-color:white;
+    padding:0;
+    margin:0;
+    font-family:Roboto, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 7px;
+    display:flex; 
+    align-content:auto;
+}
+
+nav h1{
+    font-size: medium;
+}
+
+nav ul{
+    flex:1;
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    list-style-type: none;
+    margin:auto;
+    padding:0;
+}
+
+nav ul li{
+    text-align:center; 
+}
+li a{
+    display:inline-block;
+    font-size: 15px;
+    color:black; 
+    text-align: center;
+    padding: 20px;
+    margin:10px auto;
+    text-decoration:none;
+}
+
+li:hover{
+    background-color: lightgrey;
+}
+
+/* CONTACT */
+
+.contact{
+    background-color: rgb(189, 188, 188);
+    margin:0px;
+    padding:0; 
+    width: 100%;
+    height:600px;
+    color: white;
+    font-size:20px;
+}
+.contact h1{
+    font-size: 60px;
+    height:150px;
+    margin-bottom:20px;
+}
+.contact form {
+    width:90%;
+    margin-bottom:30px;
+    margin-left:20px;
+}
+
+
+
+
+.desktop{
+    display:none;
+
+}
+
+.contact form input:last-child{
+    border-radius: 40px;
+    border: 1px solid transparent; 
+    text-transform: uppercase;
+    box-shadow: 0px 1px 2px rgb(126, 117, 117);
+    position:absolute; 
+    top:950px;
+    right:60px;
+    padding:10px 30px;
+    
+}
+
+.location{
+    background-color: black;
+    background-image: url(assets/map.png);
+    background-repeat: no-repeat;
+    background-position:left;
+    background-size: cover;
+    background-size: 300%;
+    margin:0;
+    padding:0;
+    width: 100%;
+    height:400px;
+    text-align: center;
+}
+
+.location #address{
+    display:inline-block;
+    color:white;
+    background-color: orange;
+    position:relative;
+    float:none; 
+    width:80%;
+    bottom:50px;
+    height:170px; 
+}
+
+.location #address {
+    text-align:left; 
+    margin:5px; 
+}
+
+.location #address h2{
+    font-size:40px;
+    text-align:left; 
+}
+
+
+@media screen and (min-width:800px){
+    .mobile{
+    display: none;
+    } 
+
+    header{
+        justify-content:stretch;
+    }
+
+    .hello{
+       flex:2; 
+    }
+    .hello h1{
+       
+        left:240px; 
+    }
+    .man{
+        flex:1;
+    }
+    
+
+    .desktop{
+        display: flex;
+        justify-content: space-between;
+    }
+    .desktop form{
+        display:flex; 
+        flex-direction: column;
+        align-items:center;
+    }
+    .desktop input{
+        flex:1;
+        width:90%;
+    }
+
+    nav ul{
+        margin:auto;
+        width:100%; 
+        display:flex; 
+        justify-content: center;
+        border:1px dashed pink;
+    }
+
+    nav ul li{
+        margin:0;  
+        width:15%;
+       
+    }
+}

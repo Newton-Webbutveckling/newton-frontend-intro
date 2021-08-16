@@ -1,0 +1,332 @@
+*{
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    margin:0; 
+    padding:0; 
+}
+
+h1, h2{
+font-family:'DM Serif Display', 'Arial Narrow', Arial, sans-serif;
+font-size: 40px;
+line-height: 0.9;
+}
+
+a{
+    text-decoration: none;
+    color:black; 
+}
+
+body{
+    background-color: white;
+    margin:0;
+    padding:0;
+   
+}
+
+.divided{
+    height:300px; 
+    width:auto; 
+
+}
+
+button{
+    width:140px;
+    height:40px;
+    margin:auto; 
+    border-radius: 50px;  
+    background-color:whitesmoke; 
+    text-transform: uppercase;
+    color:black;
+    font-weight: bold;
+}
+
+/* HOME */
+header{
+    background-color: rgb(207, 235, 233);
+    width:100%;
+    height:100%; 
+    
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.family{
+    /* border:3px dashed purple; */
+    height:100%; 
+    width:auto;
+    display:flex; 
+    flex-direction:column;
+}
+
+.textdiv{
+    padding:0px;
+    margin:auto; 
+    border:1px dashed blue;   
+    margin-top:60px;
+    
+}
+.textdiv h1{
+    white-space: nowrap;
+    
+    margin-top:20px; 
+    
+}
+
+.textdiv p{
+    margin-top:20px;
+}
+
+.textdiv p span{
+    color:white;
+}
+
+
+.buttoncontainer{
+    
+    border:1px dashed red; 
+    display:flex;
+    flex:1;
+}
+.buttoncontainer button{
+   
+    position:relative;
+    left:20px;
+    bottom:40px;
+    z-index:2;
+    overflow:hidden;
+}
+
+.imagecontainer{
+    width:auto;
+    flex:1;
+    border:1px dashed red; 
+    display: flex;
+}
+
+.imagecontainer img{
+    max-width:300;
+    max-height: 300px;
+    margin: auto; 
+    margin-bottom:0; 
+}
+/* LEARNMORE */
+
+.learnmore{
+    background-color:tomato;
+    color:white;
+    padding:auto;
+    display:flex; 
+}
+
+.texttogether{
+    margin:auto;
+    text-align: center;
+}
+
+/* JOINTODAY */
+
+.jointoday{
+    background-color: rgb(213, 182, 6);
+    color:white;
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* NAV */
+
+.navsection{
+    width:100%;
+    background-color: white;
+    color:black;
+    display:inline-block;
+    flex:1;
+}
+.navsection ul{
+    text-align:center;
+    
+}
+
+.navsection ul li{
+    display:inline-block;
+    margin:10px;
+}
+
+/* SAFETY */
+
+.safetysection{
+    background-color: grey;
+    display:flex;
+    flex-direction: column;
+    padding:0px;
+    height:1000px;
+    
+}
+
+.textbutton{
+    margin:30px 10px;
+    
+}
+
+.paragraph{
+    margin:10px 10px;
+}
+
+
+/* PEOPLE */
+
+.peoplecontainer{
+    width:100%;
+    flex:1;
+    margin-top:50px;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    background-color:rgb(135, 127, 127) ;
+}
+
+.whitecontainer{
+    width: 70%;
+    
+    margin:40px auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:20px;
+    flex:1;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: rgb(110, 111, 111) 2px 5px 10px;
+}
+
+
+.whitecontainer h6{
+    text-align: center;
+    margin:10px;
+}
+
+.whitecontainer p{
+    font-size: 12px;
+    color:grey;
+    margin-bottom:30px;
+}
+
+.slightlyovercontainer{
+    background-color: teal;
+    border-radius: 5px;
+    position: relative;
+    bottom:25%;
+    height:150px;
+    overflow: hidden;
+    display:flex;
+    width:90%;
+    margin:auto; 
+    margin-bottom:-30px;
+    
+}
+
+.slightlyovercontainer img{
+    margin:auto;
+    border:1px dashed blue;
+    position: relative;
+    top:20px;
+}
+
+.whitecontainer:first-child img{
+    position: relative;
+    right:5px;
+    max-width: 100px;
+    max-height:auto;
+}
+
+.a-color{
+    background-color:lightblue;
+}
+
+.b-color{
+    background-color: orange;
+}
+
+.b-color img{
+    max-width: 100px;
+    max-height:auto;
+}
+
+.c-color{
+    background-color:rgb(230, 126, 67);
+}
+.c-color img{
+    max-width: 180px;
+}
+
+
+
+
+
+
+
+@media screen and (min-width:800px){
+   
+    header{
+        display:flex;
+        flex-direction:row;  
+        border:2px dashed black;  
+        height:600px; 
+    }
+    
+    .divided{
+        width:auto;
+        height:auto; 
+        
+    }
+
+    .buttoncontainer button{
+        left:130px;
+    }
+
+    .textdiv{
+        width:60%;
+    }
+
+    .family{
+   
+      height:600px;  
+      width:50%;
+    }
+    
+    .twosplit{
+       
+        display:flex;
+        flex-direction: column;
+        width:50%; 
+    }
+    
+    .learnmore, .jointoday{
+        flex:1; 
+    }
+   
+    /* .safetysection{
+        flex-direction: row;
+        height:auto;
+        
+    }
+
+    .textbutton{
+        flex:1;
+        width:50%;
+    }
+
+    .paragraph{
+        flex:1;
+        width:50%;
+    }
+
+    .peoplecontainer{
+        width: 100%;
+    } */
+
+
+}
