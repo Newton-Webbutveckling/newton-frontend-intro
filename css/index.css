@@ -1,3 +1,7 @@
+#bodyID{
+    margin: 0px;
+}
+
 .wrap{
     display: grid;
     grid-template-columns: auto auto;
@@ -28,13 +32,13 @@
     text-align: center;
 }
 
-  .grid-container2 {
+.grid-container2 {
     display:grid;
     grid-template-rows: auto auto;
-  }
+}
 
 .navigationbar{
-    background-color: black;
+    background-color: whitesmoke;
     padding: 35px;
 }
 
@@ -46,4 +50,23 @@
 .orangebox{
     background-color: orange;
     padding: 150px;
+}
+
+.grid-element{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-element {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+.test{
+    display: inline;
 }
