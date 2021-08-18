@@ -1,0 +1,149 @@
+/*nollställer förbestämda inställningar*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-rows: 2;
+    width: 100%;
+}
+
+.learnSection, .joinSection{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 25em;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.joinSection{
+    background-color: #F9B100;
+}
+
+.learnSection{
+    background-color: #ff781f;
+}
+
+.learnSection p, .joinSection p{
+    font-size: 0.8rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+.learnSection a, .joinSection a{
+    font-size: 2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+}
+
+.descriptionSection{
+    background-color: #c2babc;
+    align-content: center;
+    justify-content: center;
+    place-content: center;
+    padding-bottom: 1em;
+}
+.descriptionSection h1{
+    font-size: 3.1rem;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 0.3em;
+    padding-top: 1em;
+    color:white;
+}
+
+.descriptionSection p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1em;
+    font-weight: 550;
+    line-height: 1.5em;
+    margin-bottom: 4em;
+}
+
+.descriptionArticleBoy, .descriptionArticleWoman, .descriptionArticleOldMan{
+    position: relative;
+    display: flex;
+    background-color: white;
+    width: 73%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items:center;
+    border-radius: 3%;
+    padding-top: 12em;
+    height: 14em;
+    margin-bottom: 4em;
+}
+
+#happyBoyBackground, #womanBackground, #oldManBackground{
+    position: absolute;
+    top: -2em;
+    background-color: #cfebfd;
+    width: 90%;
+    border-radius: 3%;
+}
+
+.descriptionArticleBoy h3, .descriptionArticleWoman h3, .descriptionArticleOldMan h3{
+    padding-top: 1em;
+    font-size: 1.3rem;
+}
+
+.descriptionArticleBoy p, .descriptionArticleWoman p, .descriptionArticleOldMan p{
+    text-align: center;
+    color: slategray;
+    font-size: 0.9rem;
+    line-height: 1.6em;
+}
+
+#boyImage, #womanImage, #oldImage{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+}
+
+#womanBackground{
+    background-color: #F9B100;
+}
+#oldManBackground{
+    background-color: #ff781f;
+}
+
+.aboutUs{
+    background-color: #F9B100;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 23em;
+    width: 100%;
+    text-align: center;
+}
+
+.aboutUs h2{
+    padding-top: 0.8em;
+    font-size: 3em;
+    color: white;
+}
+
+.aboutUs p{
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#howItWorks{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
