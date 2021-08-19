@@ -1,11 +1,9 @@
-var scrollToTopBtn = document.getElementById("scrollToTopBtn")
-var rootElement = document.documentElement
+const toTop = document.querySelector(".to-top");
 
-function scrollToTop() {
-  rootElement.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  })
-}
-
-scrollToTopBtn.addEventListener("click", scrollToTop)
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 50) {
+        toTop.classList.add("active");
+    } else {
+        toTop.classList.remove("active");
+    }
+})
