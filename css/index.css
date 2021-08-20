@@ -1,42 +1,12 @@
 #bodyID{
-    
     width: 65%;
     margin: auto;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
-.to-top{
-    background:  white;
-    position: fixed;
-    bottom: 16px;
-    right: 32px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
-    color: black;
-    text-decoration: none;
-    opacity: 0;
-    pointer-events: none;
-    transition:  all .4s;
-}
-
-.to-top.active{
-    bottom: 32px;
-    pointer-events: auto;
-    opacity: 1;
-}
-
 .topsection-grid{
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows:200px 200px;
+    grid-template-columns: 309px 309px 309px 309px;
+    grid-template-rows:350px 350px;
     background-color: #fff;
     color: #444;
 }
@@ -80,6 +50,10 @@ html{
     grid-row: 2;
 }
 
+.navsection{
+    text-align: center;
+}
+
 .test{
     display: inline;
     padding-left:inherit;
@@ -87,7 +61,7 @@ html{
 
 .midsection-grid{
     display: grid;
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 618px 618px;
     grid-template-rows:600px 600px;
     background-color: #fff;
     color: #444;
@@ -121,8 +95,8 @@ html{
 
 .lowermidsection-grid{
     display: grid;
-    grid-template-columns: 267px 267px 267px;
-    grid-template-rows:200px 200px;
+    grid-template-columns: 412px 412px 412px;
+    grid-template-rows:300px 300px;
     background-color: #fff;
     color: #444;
 }
@@ -183,3 +157,8 @@ html{
     line-height: 48px;
     width: 48px;
   }
+
+footer{
+    background-color: rgba(51, 51, 51, 0.782);
+    padding: 10%;
+}
