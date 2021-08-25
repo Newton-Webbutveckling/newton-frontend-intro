@@ -1,0 +1,177 @@
+#bodyID{
+    width: 65%;
+    margin: auto;
+}
+
+.topsection-grid{
+    /* display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 309px 309px 309px 309px;
+    grid-template-rows:350px 350px;
+    background-color: #fff;
+    color: #444; */
+
+    display: grid;
+    grid-template-rows:250px 250px;
+}
+
+#familypic{
+    width:280px;
+    height:280px;
+    position:absolute;
+    right: 50%;
+    top: 51%;
+}
+
+.boxa{
+    background-color: rgba(83, 192, 232, 0.508);
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.boxb{
+    background-color: rgba(255, 68, 0, 0.768);
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.boxc{
+    background-color: rgb(255, 183, 0);
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.a{
+    grid-column: 1/3;
+    grid-row: 1/4;
+}
+
+.b{
+    grid-column: 3/5;
+    grid-row: 1;
+}
+
+.c{
+    grid-column: 3/5;
+    grid-row: 2;
+}
+
+.navsection{
+    text-align: center;
+}
+
+.test{
+    display: inline;
+    padding-left:inherit;
+}
+
+.midsection-grid{
+    display: grid;
+    /* grid-template-columns: 618px 618px;
+    grid-template-rows:600px 600px; */
+    background-color: #fff;
+    color: #444;
+    grid-template-rows:400px 400px;
+}
+
+.boxd{
+    background-color: grey;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.boxe{
+    background-color: rgb(255, 183, 0);
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.d{
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.e{
+    grid-column: 1/3;
+    grid-row: 2;
+}
+
+.lowermidsection-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows:200px 200px;
+    background-color: #fff;
+    color: #444;
+}
+
+.boxf{
+    background-color: rgba(83, 192, 232, 0.508);
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.boxg{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+.boxh{
+    background-color: rgb(202, 193, 193);
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.boxi{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+.boxj{
+    background-color:rgba(255, 68, 0, 0.768);
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.boxk{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+footer{
+    background-color: rgba(51, 51, 51, 0.782);
+    padding: 10%;
+}
+
+@media only screen and (max-width: 1100px) {
+    .topsection-grid{
+      display:flex;
+      flex-direction:column;
+    }
+    .lowermidsection-grid{
+        display:flex;
+        flex-direction:column;
+      }
+  }

@@ -1,0 +1,17 @@
+.topsection{
+    background-color: rgba(83, 192, 232, 0.508);
+    border-radius: 5px;
+    padding: 250px;
+    font-size: 150%;
+}
+
+.midsection-message{
+    background-color: grey;
+    color: #444;
+    padding: 250px;
+}
+
+.lowersection-map{
+    background-color: black;
+    padding: 250px;
+}
